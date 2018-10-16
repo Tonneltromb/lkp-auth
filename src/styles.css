@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+body, div, h1, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto
+}
+
+div {
+}
+
+.base-page-wrapper {
+  border-left: 2px solid #f9794c;
+  border-right: 2px solid #f9794c;
+  width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  /*vertical-align: center;*/
+}
+
+.base-page_header-wrapper {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #f9794c;
+  /*vertical-align: middle;*/
+}
+
+.base-page_header-wrapper .base-page_header {
+  /*white-space: nowrap;*/
+  /*overflow: hidden;*/
+}
+
+.start-page-nav_wrapper {
+  width: 100%;
+  background-color: #f9794c;
+}
+
+.start-page-nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.start-page-nav ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.start-page-nav li {
+  display: inline;
+}
+.start-page-nav a {
+  display: inline-block;
+  border: none;
+  background-color: #f9794c;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  padding: 5px;
+}
+.start-page-nav a:hover{
+  border-bottom: 1px solid black;
+}
