@@ -2,23 +2,25 @@
 body, div, h1, ul, li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  height: auto
+  height: 100vh;
 }
 
-div {
+.content-wrapper {
+  min-width: 100vh;
+  min-height: 100vh;
+  display: flex;
 }
 
 .base-page-wrapper {
-  border-left: 2px solid #f9794c;
-  border-right: 2px solid #f9794c;
-  width: 1000px;
-  min-height: 100vh;
-  margin: 0 auto;
+  border: 2px solid #f9794c;
+  width: 800px;
+  height: 600px;
+  margin: auto;
   text-align: center;
-  /*vertical-align: center;*/
 }
 
 .base-page_header-wrapper {
@@ -26,12 +28,9 @@ div {
   height: 100px;
   line-height: 100px;
   background-color: #f9794c;
-  /*vertical-align: middle;*/
 }
 
 .base-page_header-wrapper .base-page_header {
-  /*white-space: nowrap;*/
-  /*overflow: hidden;*/
 }
 
 .start-page-nav_wrapper {
@@ -54,13 +53,13 @@ div {
 }
 .start-page-nav a {
   display: inline-block;
-  border: none;
-  background-color: #f9794c;
   text-decoration: none;
+  border-bottom: 2px solid #f9794c;
+  background-color: #f9794c;
   color: #333;
   text-align: center;
-  padding: 5px;
+  padding: 0 15px;
 }
 .start-page-nav a:hover{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
