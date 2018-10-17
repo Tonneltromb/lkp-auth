@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-body, div, h1, ul, li {
+body, div, h1, ul, li, p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +16,8 @@ body {
 }
 
 .base-page-wrapper {
-  border: 2px solid #f9794c;
+  border: 2px solid #018ccd;
+  /*border: 2px solid #f9794c;*/
   width: 800px;
   height: 600px;
   margin: auto;
@@ -27,22 +28,20 @@ body {
   width: 100%;
   height: 100px;
   line-height: 100px;
-  background-color: #f9794c;
+  background-color: #018ccd;
+  /*background-color: #f9794c;*/
 }
-
 .base-page_header-wrapper .base-page_header {
 }
-
 .start-page-nav_wrapper {
   width: 100%;
-  background-color: #f9794c;
+  background-color: #018ccd;
+  /*background-color: #f9794c;*/
 }
-
 .start-page-nav {
   width: 50%;
   margin: 0 auto;
 }
-
 .start-page-nav ul {
   margin-left: 0;
   padding-left: 0;
@@ -54,8 +53,10 @@ body {
 .start-page-nav a {
   display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid #f9794c;
-  background-color: #f9794c;
+  border-bottom: 2px solid #018ccd;
+  /*border-bottom: 2px solid #f9794c;*/
+  background-color: #018ccd;
+  /*background-color: #f9794c;*/
   color: #333;
   text-align: center;
   padding: 0 15px;
@@ -63,3 +64,17 @@ body {
 .start-page-nav a:hover{
   border-bottom: 2px solid black;
 }
+.message-page-wrapper {
+  border: 1px solid black;
+  max-width: 30%;
+  min-height: 100px;
+  margin: auto;
+  text-align: center;
+}
+.message-page {
+  margin: 40px 40px 10px;
+}
+.message-wrapper {
+  text-align: left;
+}
+

@@ -6,6 +6,7 @@ import {LoginTabComponent} from './login-tab/login-tab.component';
 import {RegistrationTabComponent} from './registration-tab/registration-tab.component';
 import {StartPageComponent} from './start-page/start-page.component';
 import {RegistrationPageComponent} from './registration-tab/registration-page/registration-page.component';
+import {MessagePageComponent} from './message-page/message-page.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {RegistrationPageComponent} from './registration-tab/registration-page/re
     StartPageComponent,
     LoginTabComponent,
     RegistrationTabComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    MessagePageComponent
   ],
   imports: [
     CommonModule,
