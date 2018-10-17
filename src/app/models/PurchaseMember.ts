@@ -2,10 +2,10 @@ import {MemberType} from './MemberType';
 
 export class PurchaseMember {
   name: string;
-  type: MemberType;
+  memberType: string;
 
-  constructor(name: string, type: MemberType) {
+  constructor(name: string, memberType: string) {
     this.name = name;
-    this.type = type;
+    this.memberType = memberType;
   }
 }

@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {BaseModule} from './pages/base.module';
 import {AppRoutingModule} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
+import {UserService} from './services/user.service';
 
 
 @NgModule({
@@ -13,10 +15,11 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BaseModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
