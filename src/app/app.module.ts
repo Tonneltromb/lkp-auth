@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {BaseModule} from './pages/base.module';
+import {SystemModule} from './pages/system.module';
 import {AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {UserService} from './services/user.service';
+import {AppCommonModule} from './common/app.common.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {UserService} from './services/user.service';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    BaseModule
+    AppCommonModule,
+    SystemModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

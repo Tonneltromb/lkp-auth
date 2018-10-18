@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {BasePageComponent} from './base-page/base-page.component';
-import {LoginTabComponent} from './login-tab/login-tab.component';
-import {RegistrationTabComponent} from './registration-tab/registration-tab.component';
-import {StartPageComponent} from './start-page/start-page.component';
-import {RegistrationPageComponent} from './registration-tab/registration-page/registration-page.component';
+import {LoginTabComponent} from './tabs/login-tab/login-tab.component';
+import {RegistrationTabComponent} from './tabs/registration-tab/registration-tab.component';
+import {TabsComponent} from './tabs/tabs.component';
+import {RegistrationPageComponent} from './registration-page/registration-page.component';
 
-const startPageRoutes: Routes = [
+const tabsPageRoutes: Routes = [
   { path: 'loginTab', component: LoginTabComponent },
   { path: 'registrationTab', component: RegistrationTabComponent }
 ];
@@ -15,7 +15,7 @@ const startPageRoutes: Routes = [
 const routes: Routes = [{
   path: '', component: BasePageComponent,
   children: [
-    { path: 'start-page', component: StartPageComponent, children: startPageRoutes },
+    { path: 'tabs', component: TabsComponent, children: tabsPageRoutes },
     { path: 'login', component: RegistrationPageComponent },
     { path: 'registration', component: RegistrationPageComponent }
   ]

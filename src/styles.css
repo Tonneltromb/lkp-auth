@@ -1,12 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-body, div, h1, ul, li, p {
+body, div, h1, h2, h3, h4, ul, li, p, a, span, button {
   margin: 0;
   padding: 0;
+  outline:none;
   box-sizing: border-box;
 }
 
 body {
   height: 100vh;
+  background-color: lightgray;
 }
 
 .content-wrapper {
@@ -16,54 +18,75 @@ body {
 }
 
 .base-page-wrapper {
-  border: 2px solid #018ccd;
-  /*border: 2px solid #f9794c;*/
-  width: 800px;
-  height: 600px;
+  background-color: white;
+  border: 1px solid #018ccd;
+  min-width: 650px;
+  height: 500px;
   margin: auto;
   text-align: center;
 }
 
-.base-page_header-wrapper {
+.base-page__header-wrapper {
   width: 100%;
   height: 100px;
-  line-height: 100px;
   background-color: #018ccd;
-  /*background-color: #f9794c;*/
+  border: 1px solid #018ccd;
 }
-.base-page_header-wrapper .base-page_header {
+
+.base-page_content-wrapper {
+  width: 100%;
+  height: 400px;
 }
-.start-page-nav_wrapper {
+
+.base-page__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.base-page__header__button-exit {
+  align-self: flex-end;
+}
+
+.base-page__header h1{
+  margin: 0 15px 15px ;
+}
+
+.tabs-component-wrapper {
   width: 100%;
   background-color: #018ccd;
   /*background-color: #f9794c;*/
 }
-.start-page-nav {
+
+.tabs-component {
   width: 50%;
+  height: 30px;
   margin: 0 auto;
 }
-.start-page-nav ul {
+
+.tabs-component ul {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
-.start-page-nav li {
+
+.tabs-component li {
   display: inline;
 }
-.start-page-nav a {
+
+.tabs-component a {
   display: inline-block;
   text-decoration: none;
   border-bottom: 2px solid #018ccd;
-  /*border-bottom: 2px solid #f9794c;*/
   background-color: #018ccd;
-  /*background-color: #f9794c;*/
   color: #333;
   text-align: center;
   padding: 0 15px;
 }
-.start-page-nav a:hover{
+
+.tabs-component a:hover{
   border-bottom: 2px solid black;
 }
+
 .message-page-wrapper {
   border: 1px solid black;
   max-width: 30%;
@@ -71,10 +94,86 @@ body {
   margin: auto;
   text-align: center;
 }
+
 .message-page {
   margin: 40px 40px 10px;
 }
+
 .message-wrapper {
   text-align: left;
+}
+
+.list-wrapper {
+  width: 100%;
+}
+
+.list-element-wrapper {
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 98%;
+  margin: 1%;
+  padding: 5px;
+  min-height: 60px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-element {
+  margin: auto 0;
+  width: 100%;
+}
+
+.list-element-wrapper:hover {
+  box-shadow: 0 0 10px #018ccd;
+  cursor: pointer;
+}
+
+.member_name {
+  color: #018ccd;
+}
+
+.member_type {
+  font-size: 0.9em;
+  color: grey;
+}
+
+.registration-page {
+  color: #018ccd;
+}
+.registration-page__header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /*justify-content: start;*/
+  align-items: flex-start;
+  padding: 10px 10px 0;
+}
+
+.registration-page__header h3, .registration-page__header h4 {
+  margin-top: 10px;
+}
+
+/*Buttons*/
+.button {
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.button_blue {
+  background-color: #018ccd;
+}
+
+.button_blue:hover {
+  box-shadow: 0 0 10px #018ccd;
+}
+
+.button_exit{
+  background-color: #018ccd;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px 5px 0 0;
 }
 
