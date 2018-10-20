@@ -4,6 +4,7 @@ body, div, h1, h2, h3, h4, ul, li, p, a, span, button {
   padding: 0;
   outline:none;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -38,6 +39,9 @@ body {
   height: 400px;
 }
 
+.base-page_content {
+}
+
 .base-page__header {
   display: flex;
   flex-direction: column;
@@ -51,29 +55,33 @@ body {
   margin: 0 15px 15px ;
 }
 
-.tabs-component-wrapper {
+.tabs_wrapper {
+  height: 400px;
+}
+
+.tabs__header_wrapper {
   width: 100%;
+  height: 30px;
   background-color: #018ccd;
   /*background-color: #f9794c;*/
 }
 
-.tabs-component {
+.tabs__header {
   width: 50%;
-  height: 30px;
   margin: 0 auto;
 }
 
-.tabs-component ul {
+.tabs__header ul {
   margin-left: 0;
   padding-left: 0;
   list-style: none;
 }
 
-.tabs-component li {
+.tabs__header li {
   display: inline;
 }
 
-.tabs-component a {
+.tabs__header a {
   display: inline-block;
   text-decoration: none;
   border-bottom: 2px solid #018ccd;
@@ -83,8 +91,16 @@ body {
   padding: 0 15px;
 }
 
-.tabs-component a:hover{
+.tabs__header a:hover{
   border-bottom: 2px solid black;
+}
+
+.tabs__content_wrapper {
+  height: 370px;
+}
+
+.tabs__content {
+  height: inherit;
 }
 
 .message-page-wrapper {
@@ -105,6 +121,7 @@ body {
 
 .list-wrapper {
   width: 100%;
+  height: 100%;
 }
 
 .list-element-wrapper {
@@ -152,6 +169,11 @@ body {
 
 .registration-page__header h3, .registration-page__header h4 {
   margin-top: 10px;
+}
+
+/*Common*/
+.scroll-block_vertical {
+  overflow-y: scroll;
 }
 
 /*Buttons*/

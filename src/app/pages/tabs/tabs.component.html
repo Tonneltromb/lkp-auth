@@ -1,17 +1,20 @@
-<div class="tabs-component-wrapper">
-  <div class="tabs-component">
-    <ul>
-      <li>
-        <a routerLink="/tabs/loginTab" routerLinkActive="active_tab" [routerLinkActiveOptions]="{exact: true}"><h2>Вход в ЕИС</h2></a>
-      </li>
-      <li >
-        <a routerLink="/tabs/registrationTab" routerLinkActive="active_tab"><h2>Регистрация</h2></a>
-      </li>
-    </ul>
+<div class="tabs_wrapper">
+  <div class="tabs__header_wrapper">
+    <div class="tabs__header">
+      <ul>
+        <li>
+          <a routerLink="/tabs/loginTab" routerLinkActive="active_tab" [routerLinkActiveOptions]="{exact: true}"><h2>
+            Вход в ЕИС</h2></a>
+        </li>
+        <li>
+          <a routerLink="/tabs/registrationTab" routerLinkActive="active_tab"><h2>Регистрация</h2></a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
-<div class="tab-content-wrapper">
-  <div class="tab-content">
+  <div class="tabs__content_wrapper">
+    <div class="tabs__content">
     <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
