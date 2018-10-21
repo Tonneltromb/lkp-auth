@@ -8,6 +8,7 @@ import {TabsComponent} from './tabs/tabs.component';
 import {RegistrationPageComponent} from './registration-page/registration-page.component';
 import {MessagePageComponent} from './message-page/message-page.component';
 import {AppCommonModule} from '../common/app.common.module';
+import {BtnDirective} from '../common/ui/btns/btn.directive';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {AppCommonModule} from '../common/app.common.module';
     RegistrationTabComponent,
     RegistrationPageComponent,
     MessagePageComponent,
+    BtnDirective
   ],
   imports: [
     CommonModule,

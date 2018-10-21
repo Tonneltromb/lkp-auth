@@ -199,3 +199,12 @@ body {
   padding: 5px 5px 0 0;
 }
 
+.app-btn {
+  background-color: #018ccd;
+  outline: none;
+  border: 1px dashed #01283c;
+}
+
+.app-btn--danger {
+  background-color: red;
+}
