@@ -16,9 +16,10 @@ export class LoginTabComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.userService.getUserById(1).subscribe((data: User[]) => {
-      this.user = data[0];
-      this.members = data[0].allowedPurchaseMembers;
+    this.userService.getUserById(1).subscribe((data: any) => {
+      console.log(data.users[0]);
+      this.user = data.users[0];
+      this.members = data.users[0].allowedPurchaseMembers;
     });
   }
 

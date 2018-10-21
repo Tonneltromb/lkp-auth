@@ -6,6 +6,6 @@ import {ApplicationProperties} from '../common/application.properties';
 export class UserService {
   constructor(private http: HttpClient) {}
   getUserById(id: number) {
-    return this.http.get(ApplicationProperties.URL + '/users?id=${id}');
+    return this.http.get('/users');
   }
 }

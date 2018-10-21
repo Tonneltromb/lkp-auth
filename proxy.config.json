@@ -1,0 +1,8 @@
+{
+  "/users": {
+    "target": "http://localhost:4200/assets/_development/testStub.json",
+    "pathRewrite": {
+      "^/users": ""
+    }
+  }
+}
